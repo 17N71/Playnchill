@@ -1,13 +1,15 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document"
 
 export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+	return (
+		<Html lang='ru'>
+			<Head>
+				<link rel='icon' href='/favicon.png' type='image/png' sizes='any' />
+			</Head>
+			<body>
+				<Main />
+				<NextScript />
+			</body>
+		</Html>
+	)
 }
