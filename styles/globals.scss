@@ -11,7 +11,7 @@ body {
 a,
 button,
 input {
-	@apply outline-none border-none;
+	@apply outline-none;
 }
 input[type="search"]::-ms-clear {
 	@apply hidden w-0 h-0;

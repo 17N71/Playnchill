@@ -9,6 +9,7 @@ module.exports = {
 				lg: "991px",
 				xl: "1024px",
 				xlm: "1040px",
+				mlm: "1100px",
 				"2xl": "1280px",
 			},
 			colors: {
@@ -17,6 +18,7 @@ module.exports = {
 				mediumGrey: "#171320",
 				lightMediumGrey: "#3c364e",
 				venom: "#77BE1D",
+				borderColor: "#13101b",
 				sky: "#366EDC",
 				orange: "#FF4C00",
 			},

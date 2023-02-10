@@ -1,0 +1,21 @@
+.menu {
+	@apply bg-darkGray absolute top-8 pt-2 px-1.5 pb-2.5 left-3 w-36 text-sm;
+}
+.languages {
+	@apply flex flex-col;
+}
+.languageButton {
+	@apply text-white font-light px-2.5 pt-1 pb-1.5 rounded-md cursor-pointer last-of-type:mt-1.5 bg-mediumGrey;
+}
+.languageButton.active {
+	@apply bg-venom;
+}
+.exchanges {
+	@apply flex justify-between items-center pt-2 border-t-2 border-lightMediumGrey/70 mt-2;
+}
+.exchange {
+	@apply px-3 py-1 rounded-md cursor-pointer bg-mediumGrey w-9;
+}
+.exchange.active {
+	@apply bg-venom;
+}

@@ -1,0 +1,75 @@
+.button {
+	@apply w-full text-center py-5 transition-all duration-150 rounded-xl block;
+}
+.button.transparent {
+	@apply bg-transparent;
+}
+.button.transparent.lightGrayBorder {
+	@apply border-2 border-borderColor hover:bg-borderColor;
+}
+.button.transparent.noBorder {
+	@apply border-none;
+}
+.button.transparent.venomBorder {
+	@apply border-2 border-venom hover:bg-venom;
+}
+.button.venomBg {
+	@apply bg-venom;
+}
+.button.venomBg.venomBorder {
+	@apply border-2 border-venom hover:bg-transparent;
+}
+.button.venomBg.lightGrayBorder {
+	@apply border-2 border-borderColor hover:bg-transparent;
+}
+.button.venomBg.noBorder {
+	@apply border-none;
+}
+.button.venomBgWithTransparent {
+	@apply bg-[#77be1d1a] text-venom;
+}
+.button.venomBgWithTransparent.noBorder {
+	@apply border-none hover:bg-venom hover:text-white;
+}
+.button.venomBgWithTransparent.venomBorder {
+	@apply border-2 border-venom hover:bg-venom hover:text-white hover:border-white;
+}
+.button.venomBgWithTransparent.lightGrayBorder {
+	@apply border-2 border-borderColor hover:bg-transparent;
+}
+.button.blueText {
+	@apply text-sky;
+}
+.button.blueText.lightGrayBorder {
+	@apply text-sky border-2 border-borderColor hover:bg-sky hover:text-white hover:border-white;
+}
+.button.blueText.venomBorder {
+	@apply border-2 border-venom hover:bg-venom hover:border-sky;
+}
+.button.blueText.noBorder {
+	@apply border-none hover:bg-sky hover:text-white;
+}
+.button.lightGrayBg {
+	@apply bg-[#ffffff0d] text-white;
+}
+.button.lightGrayBg.lightGrayBorder {
+	@apply border-2 border-borderColor hover:bg-transparent;
+}
+.button.lightGrayBg.venomBorder {
+	@apply border-2 border-venom hover:bg-venom hover:border-[#ffffff0d];
+}
+.button.lightGrayBg.noBorder {
+	@apply border-none hover:bg-white hover:text-black;
+}
+.button.whiteBg {
+	@apply bg-white text-black;
+}
+.button.whiteBg.noBorder {
+	@apply border-none hover:bg-black hover:text-white;
+}
+.button.whiteBg.venomBorder {
+	@apply border-2 border-venom hover:text-venom;
+}
+.button.whiteBg.lightGrayBorder {
+	@apply border-2 border-borderColor hover:bg-borderColor hover:text-white;
+}

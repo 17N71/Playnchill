@@ -1,7 +1,7 @@
 import "@/styles/globals.scss"
 import type { AppProps } from "next/app"
 import { Inter, Manrope, Montserrat } from "@next/font/google"
-import Header from "./../components/Header/index"
+import Header from "../components/HeaderComponents/Header/index"
 import Head from "next/head"
 const inter = Inter({
 	weight: "400",

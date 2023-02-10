@@ -1,0 +1,12 @@
+.mediaMenuSubHeader {
+	@apply flex justify-between  mt-6 items-center ;
+	div {
+		@apply flex gap-5;
+		button {
+			@apply cursor-pointer flex items-center gap-1;
+			svg {
+				@apply transform rotate-180;
+			}
+		}
+	}
+}

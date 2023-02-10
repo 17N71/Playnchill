@@ -1,0 +1,18 @@
+.mediaMenu {
+	@apply fixed top-0 left-0 w-full h-full bg-darkblue z-10;
+}
+.buttonCatalog {
+	@apply font-medium text-lg mb-14;
+}
+.subHeaderMenu {
+	@apply px-6;
+}
+.flexWrapper {
+	@apply h-full  flex flex-col justify-between;
+}
+.subFooter {
+	@apply border-t-2 border-lightMediumGrey pt-3 pb-6 px-6 flex justify-center items-center gap-11;
+	&Button {
+		@apply hover:text-venom transition-colors duration-200;
+	}
+}

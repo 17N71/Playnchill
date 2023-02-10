@@ -1,0 +1,16 @@
+.nav {
+	@apply flex items-center  justify-start;
+}
+.ul {
+	@apply flex items-center justify-center gap-8;
+	li {
+		a {
+			@apply hover:text-venom duration-200 transition-colors;
+		}
+		&.activeSlug {
+			a {
+				@apply text-venom;
+			}
+		}
+	}
+}

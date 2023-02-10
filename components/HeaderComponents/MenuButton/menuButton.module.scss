@@ -1,0 +1,6 @@
+.menuButton {
+	@apply flex justify-center items-center w-8 h-8;
+	&Image {
+		@apply min-w-[22px] min-h-[9px] mr-6;
+	}
+}

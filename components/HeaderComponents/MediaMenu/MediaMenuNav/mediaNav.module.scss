@@ -1,0 +1,20 @@
+.nav {
+	@apply mt-9 text-2xl font-semibold;
+	& > strong {
+		@apply mb-6 block cursor-pointer hover:text-venom duration-200 transition-colors;
+	}
+	.ul {
+		@apply inline-flex flex-col gap-5;
+	
+	}
+		li {
+			a {
+				@apply inline-block hover:text-venom duration-200 transition-colors;
+			}
+		}
+		li.activeSlug {
+			a {
+				@apply text-venom;
+			}
+		}
+}
