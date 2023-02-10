@@ -1,0 +1,9 @@
+.account {
+	@apply flex gap-6 items-center cursor-pointer;
+	&Name {
+		@apply font-semibold;
+	}
+	&Image {
+		@apply rounded-full border-2 border-solid border-venom w-[34px] h-[34px] object-cover object-center;
+	}
+}

@@ -1,0 +1,18 @@
+.helpers {
+	@apply flex items-center;
+	button:first-of-type {
+		@apply mr-5;
+	}
+}
+.free {
+	@apply 2xl:mr-14 mr-7 font-medium text-venom cursor-pointer;
+}
+.basket {
+	@apply relative;
+}
+.games {
+	@apply absolute -top-2 rounded-md -right-3 font-bold w-6 h-6 backdrop-blur bg-[#150f2659];
+}
+.fill {
+	@apply text-venom;
+}

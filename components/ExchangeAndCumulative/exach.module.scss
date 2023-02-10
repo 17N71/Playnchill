@@ -1,0 +1,12 @@
+.ExchangeAndCumulative {
+	@apply flex justify-start self-start relative;
+}
+.button {
+	@apply flex gap-1 2xl:mr-20  mr-5 outline-none border-none items-center;
+	svg {
+		@apply transition-colors duration-300;
+	}
+}
+.slash {
+	@apply text-lightMediumGrey text-xl font-black;
+}

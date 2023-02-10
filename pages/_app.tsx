@@ -5,15 +5,15 @@ import Header from "./../components/Header/index"
 import Head from "next/head"
 const inter = Inter({
 	weight: "400",
-	subsets: ["cyrillic", "cyrillic-ext"],
+	subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
 })
 const manrope = Manrope({
-	weight: ["400", "500", "600"],
-	subsets: ["cyrillic", "cyrillic-ext"],
+	weight: ["400", "500", "600", "700", "200", "300", "800"],
+	subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
 })
 const montserrat = Montserrat({
 	weight: ["400", "700"],
-	subsets: ["cyrillic", "cyrillic-ext"],
+	subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
 })
 export default function App({ Component, pageProps }: AppProps) {
 	return (

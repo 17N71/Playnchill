@@ -1,0 +1,9 @@
+.searchField {
+	@apply w-full max-w-[650px] h-[66px] bg-darkGray flex items-center pl-8 pr-7 py-2.5 rounded-2xl justify-between gap-2;
+}
+.input {
+	@apply bg-transparent w-full;
+}
+.searchButton {
+	@apply transform rotate-90;
+}

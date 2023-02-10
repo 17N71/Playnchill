@@ -1,0 +1,12 @@
+.header {
+	@apply flex flex-col gap-5 mt-6;
+	&SubTop {
+		@apply flex 2xl:gap-20  gap-8;
+	}
+	&Top {
+		@apply flex justify-between;
+	}
+	&Bottom {
+		@apply flex justify-between items-center;
+	}
+}
