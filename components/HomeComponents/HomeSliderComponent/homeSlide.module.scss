@@ -1,0 +1,27 @@
+.slideWithContent {
+	@apply py-[13%] pl-[5%] relative z-[8] pr-3 min-h-[480px] max-h-[700px] h-full;
+}
+.paragraph {
+	@apply 2xl:text-2xl  max-w-[600px] mt-5 w-full;
+}
+.addButtons {
+	@apply flex gap-3 mt-10;
+	& > .addButton {
+		@apply max-w-[137px];
+	}
+}
+.prices {
+	@apply flex gap-4 mt-10;
+	.price {
+		@apply font-extrabold text-3xl;
+	}
+	.sale {
+		@apply text-venom font-extrabold text-xl;
+	}
+	.priceWithoutSale {
+		@apply font-semibold text-white/[0.3] text-xl;
+	}
+}
+.smallLogo {
+	@apply w-[220px];
+}

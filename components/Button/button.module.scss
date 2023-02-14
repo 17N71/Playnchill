@@ -50,13 +50,13 @@
 	@apply border-none hover:bg-sky hover:text-white;
 }
 .button.lightGrayBg {
-	@apply bg-[#ffffff0d] text-white;
+	@apply bg-white/[0.25] text-white;
 }
 .button.lightGrayBg.lightGrayBorder {
 	@apply border-2 border-borderColor hover:bg-transparent;
 }
 .button.lightGrayBg.venomBorder {
-	@apply border-2 border-venom hover:bg-venom hover:border-[#ffffff0d];
+	@apply border-2 border-venom hover:bg-venom hover:border-white/[0.25];
 }
 .button.lightGrayBg.noBorder {
 	@apply border-none hover:bg-white hover:text-black;

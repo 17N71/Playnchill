@@ -1,8 +1,10 @@
+import "@splidejs/react-splide/css"
 import "@/styles/globals.scss"
 import type { AppProps } from "next/app"
 import { Inter, Manrope, Montserrat } from "@next/font/google"
 import Header from "../components/HeaderComponents/Header/index"
 import Head from "next/head"
+import ApolloConnecter from "@/ApolloClient"
 const inter = Inter({
 	weight: "400",
 	subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
@@ -35,7 +37,9 @@ export default function App({ Component, pageProps }: AppProps) {
 			<Head>
 				<title>Playnchill</title>
 			</Head>
-			<Component {...pageProps} />
+			<ApolloConnecter>
+				<Component {...pageProps} />
+			</ApolloConnecter>
 		</>
 	)
 }

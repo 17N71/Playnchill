@@ -1,5 +1,5 @@
 import useStoreIsReady from "@/hooks/useStoreIsReady"
-import { useBasketStore, useLikedProductsStore } from "@/store"
+import { useBasketStore, useFavoriteStore } from "@/store"
 import { AiOutlineHeart } from "react-icons/ai"
 import { SlBasket } from "react-icons/sl"
 import { shallow } from "zustand/shallow"
@@ -7,7 +7,7 @@ import styles from "./likedOrToBuyGamesButtons.module.scss"
 
 const LikedOrToBuyGamesButtons = () => {
 	const [basket] = useBasketStore((state) => [state.basket], shallow)
-	const [likedProducts] = useLikedProductsStore((state) => [state.likedProducts], shallow)
+	const [likedProducts] = useFavoriteStore((state) => [state.favorites], shallow)
 	const [isBasketFill] = useStoreIsReady(basket)
 	const [isLikedProductsFill] = useStoreIsReady(likedProducts)
 	return (
