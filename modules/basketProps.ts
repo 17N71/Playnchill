@@ -1,10 +1,14 @@
 export interface IBasketProps {
 	basket: any[]
 	clearBasket: () => void
-	addToBasket: (newGame: number) => void
+	addToBasket: (newGame: string) => void
+	toggleBasket: (id: string) => void
+	isHas: (id: string) => boolean
 }
-export interface ILikedProps {
-	likedProducts: any[]
-	clearBasket: () => void
-	addToBasket: (newGame: number) => void
+export interface IFavoritesStore {
+	favorites: string[]
+	clearFavorites: () => void
+	addToFavorites: (newGameId: string) => void
+	toggleFavorites: (id: string) => void
+	isHas: (id: string) => void
 }
