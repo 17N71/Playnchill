@@ -21,6 +21,7 @@ module.exports = {
 				borderColor: "#13101b",
 				sky: "#366EDC",
 				orange: "#FF4C00",
+				roseOrange: "#FF3030",
 			},
 		},
 	},

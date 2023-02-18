@@ -1,0 +1,72 @@
+.card {
+	@apply overflow-hidden 
+	flex-1 max-w-[300px] min-w-[298px] grow shrink basis-full 
+	w-full h-[450px] p-5 
+	flex flex-col justify-between 
+	bg-cover bg-center relative rounded-[15px];
+	&Header {
+		@apply flex justify-between w-full;
+	}
+	&ButtonTop4 {
+		@apply flex bg-black px-3 py-2 rounded-lg;
+	}
+	&AddToFav {
+		@apply text-venom bg-white w-10 h-10 rounded-full flex justify-center items-center opacity-0 transition-all duration-100 transform translate-x-1;
+
+		&.inFav {
+			@apply text-white bg-venom;
+		}
+	}
+	.addToBask {
+		@apply absolute -bottom-56 transition-all duration-100 left-1/2 transform -translate-x-1/2 w-[calc(100%-40px)];
+		&.addedToBask {
+			@apply bg-white text-venom;
+		}
+	}
+	&:hover .addToBask {
+		@apply bottom-5 active:bg-venom/[92%];
+	}
+	&:hover &AddToFav {
+		@apply opacity-100 transform translate-x-0;
+	}
+	&Footer {
+		@apply mt-5;
+		&Prices {
+			@apply flex w-full justify-between;
+			& > span:nth-child(1) {
+				@apply text-white text-2xl;
+			}
+			& > span:nth-child(2) {
+				@apply text-venom text-lg;
+			}
+			& > span:nth-child(3) {
+				@apply text-white/[20%] text-lg relative after:absolute after:top-1/2  after:-left-2 after:translate-x-2 after:w-full after:h-[2px] after:bg-white/[20%] after:transform after:rotate-[20deg] after:-translate-y-1/2;
+			}
+		}
+		& > h3 {
+			@apply mt-2.5;
+		}
+		.dots {
+			@apply flex gap-10 items-center font-medium text-sm text-[#747474] pl-5 mt-2.5;
+			& > span {
+				@apply relative after:absolute after:w-3 after:h-3 after:bg-[#3D394A] after:-left-4 after:top-1/2  after:rounded-full after:transform after:-translate-y-1/2;
+			}
+		}
+	}
+	.image {
+		@apply w-auto h-auto mx-1;
+	}
+	.hitAndNewButtons {
+		@apply flex gap-2.5;
+	}
+	.btnNew {
+		@apply bg-orange;
+	}
+	.btnNew,
+	.btnHit {
+		@apply rounded-lg text-white font-extrabold px-2 text-sm  hover:bg-opacity-[85%]  transition-colors duration-150;
+	}
+	.btnHit {
+		@apply bg-roseOrange;
+	}
+}

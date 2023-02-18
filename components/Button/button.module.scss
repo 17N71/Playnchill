@@ -23,7 +23,10 @@
 	@apply border-2 border-borderColor hover:bg-transparent;
 }
 .button.venomBg.noBorder {
-	@apply border-none;
+	@apply border-none shadow-md shadow-black/50 rounded-xl;
+	&:hover {
+		background-color: darken(rgb(119 190 29), 9px);
+	}
 }
 .button.venomBgWithTransparent {
 	@apply bg-[#77be1d1a] text-venom;

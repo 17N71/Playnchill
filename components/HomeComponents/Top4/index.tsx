@@ -11,7 +11,7 @@ const Top4 = () => {
 	return (
 		<section className={styles.top4}>
 			<h2 className={styles.top4Title}>
-				Топ 4{" "}
+				Топ 4
 				<Image
 					src={"/Home/icons/lightning.svg"}
 					alt={"Lightning top4"}
@@ -20,11 +20,10 @@ const Top4 = () => {
 					height={22}
 				/>
 			</h2>
-
-			{allGameCard.length &&
-				allGameCard.map((game) => (
-					<GameCard isTop={true} isNew={false} isHit={false} key={game._id} game={game} />
-				))}
+			<div className={styles.cards}>
+				{allGameCard.length &&
+					allGameCard.map((game) => <GameCard isTop={true} key={game._id} game={game} />)}
+			</div>
 		</section>
 	)
 }

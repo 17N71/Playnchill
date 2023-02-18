@@ -1,7 +1,7 @@
 .top4 {
 	@apply mt-20;
 	&Title {
-		@apply flex text-4xl items-center gap-2.5;
+		@apply flex text-4xl items-center gap-2.5 max-[1276px]:justify-center;
 		background: conic-gradient(
 				from 180deg at 50.93% 50%,
 				#000000 0deg,
@@ -38,4 +38,7 @@
 		text-fill-color: transparent;
 		background-blend-mode: screen, normal, normal, normal;
 	}
+}
+.cards {
+	@apply flex w-full gap-5 my-5 flex-wrap max-[1280px]:justify-center;
 }

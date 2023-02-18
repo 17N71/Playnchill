@@ -1,0 +1,91 @@
+.image {
+	@apply w-auto h-auto object-cover object-center min-w-[150px] max-w-[150px] max-h-[200px] min-h-[200px];
+}
+
+.card {
+	@apply flex gap-2.5;
+	&Prices {
+		@apply flex w-full gap-2.5;
+		& > span:nth-child(1) {
+			@apply text-white text-lg font-extrabold;
+		}
+		& > span:nth-child(2) {
+			@apply text-venom  font-medium;
+		}
+		& > span:nth-child(3) {
+			@apply text-white/[20%]  relative after:absolute after:top-1/2  after:-left-2 after:translate-x-2 after:w-full after:h-[2px] after:bg-white/[20%] after:transform after:rotate-[20deg] after:-translate-y-1/2;
+		}
+	}
+	&Name {
+		@apply text-sm mt-1.5;
+	}
+	.dots {
+		@apply max-[390px]:flex-col max-[390px]:gap-1 max-[390px]:items-start  flex gap-10 items-center font-medium text-sm text-[#747474] pl-5 mt-2.5;
+		& > span {
+			@apply relative after:absolute after:w-3 after:h-3 after:bg-[#3D394A] after:-left-4 after:top-1/2  after:rounded-full after:transform after:-translate-y-1/2;
+		}
+	}
+	.top4 {
+		@apply mt-1.5 font-extrabold;
+		background: conic-gradient(
+				from 180deg at 50.93% 50%,
+				#000000 0deg,
+				rgba(255, 255, 255, 0.72) 16.88deg,
+				#000000 88.12deg,
+				rgba(255, 255, 255, 0.72) 151.87deg,
+				#000000 225deg,
+				rgba(255, 255, 255, 0.72) 288.75deg,
+				#000000 360deg
+			),
+			radial-gradient(
+					78.31% 80.25% at 11.77% 28.24%,
+					rgba(110, 124, 251, 0.52) 7.61%,
+					rgba(251, 66, 255, 0.52) 35.14%,
+					rgba(255, 66, 247, 0.52) 63.45%,
+					rgba(66, 119, 255, 0.52) 100%
+				)
+				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+			conic-gradient(
+				from 180deg at 49.45% 50%,
+				#e8edf1 -3.44deg,
+				#d6dfe6 56.25deg,
+				#fafbfc 133.38deg,
+				#f6d0ff 215.62deg,
+				#d7e0e7 311.43deg,
+				#f7f8f9 313.84deg,
+				#e8edf1 356.56deg,
+				#d6dfe6 416.25deg
+			),
+			#ffffff;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		background-blend-mode: screen, normal, normal, normal;
+		transform: matrix(1, 0, -0.2, 0.98, 0, 0);
+	}
+	.storButtons {
+		@apply flex justify-end gap-5;
+	}
+	.buttonNew {
+		@apply text-orange;
+	}
+	.buttonHit {
+		@apply text-roseOrange;
+	}
+	.ISbuttons {
+		@apply flex gap-2.5;
+	}
+	.buttonHit,
+	.buttonNew {
+		@apply text-sm font-extrabold;
+	}
+	.storButtons {
+		.buttonStore {
+			@apply text-white/20;
+		}
+		.buttonStore.active {
+			@apply text-venom;
+		}
+	}
+}

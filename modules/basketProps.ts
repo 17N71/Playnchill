@@ -10,5 +10,5 @@ export interface IFavoritesStore {
 	clearFavorites: () => void
 	addToFavorites: (newGameId: string) => void
 	toggleFavorites: (id: string) => void
-	isHas: (id: string) => void
+	isHas: (id: string) => boolean
 }
