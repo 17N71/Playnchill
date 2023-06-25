@@ -15,11 +15,7 @@ export const useBasketStore = create<IBasketProps>()(
 					return get().addToBasket(id)
 				}
 			},
-			isHas: (id: string): boolean => {
-				return get().basket.includes(id)
-			},
 		}),
-
 		{
 			name: "basket",
 		}

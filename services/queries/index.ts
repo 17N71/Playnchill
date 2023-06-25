@@ -21,3 +21,25 @@ export const getTop4 = gql`
 		}
 	}
 `
+
+export const getLast12 = gql`
+	query getLast12Games {
+		allGameCard(limit: 12, sort: { _createdAt: DESC }) {
+			_id
+			nameGame
+			gameGenre
+			saleForGame
+			gamePrice
+			slug {
+				current
+			}
+			gameImage {
+				gameImage {
+					asset {
+						url
+					}
+				}
+			}
+		}
+	}
+`

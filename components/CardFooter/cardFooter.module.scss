@@ -1,0 +1,18 @@
+.dots {
+	@apply flex gap-10 items-center font-medium text-sm text-[#747474] pl-5 mt-2.5;
+	& > span {
+		@apply relative after:absolute after:w-3 after:h-3 after:bg-[#3D394A] after:-left-4 after:top-1/2  after:rounded-full after:transform after:-translate-y-1/2;
+	}
+}
+.prices {
+	@apply flex gap-5 mt-5;
+	span:nth-of-type(1) {
+		@apply text-2xl font-extrabold;
+	}
+	span:nth-of-type(2) {
+		@apply font-extrabold text-xl text-customYellow;
+	}
+	span:nth-of-type(3) {
+		@apply text-lg font-semibold text-white/50;
+	}
+}

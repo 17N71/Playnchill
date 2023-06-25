@@ -72,3 +72,38 @@ input[type="search"]::-webkit-search-results-decoration {
 .layout {
 	@apply max-w-[1280px] mx-auto w-full px-2.5;
 }
+.packs {
+	@apply p-0;
+	.splide__arrows.splide__arrows--ltr {
+		@apply w-[106%] absolute -left-[3%] top-1/2 transform -translate-y-1/2 z-50 flex justify-between;
+	}
+	.splide__arrow.splide__arrow--prev,
+	.splide__arrow.splide__arrow--next {
+		@apply w-10 h-10 rounded-full backdrop-blur-lg bg-gray-500/[0.05];
+		svg {
+			@apply fill-gray-300 w-4;
+		}
+	}
+	.splide__arrows.splide__arrows--ltr {
+		@media screen and (max-width: 1600px) {
+			width: 100% !important;
+			left: 0 !important;
+		}
+	}
+	.splide__slide {
+		@media screen and (max-width: 1600px) {
+			width: 100% !important;
+		}
+		@media screen and (max-width: 620px) {
+			height: 100% !important;
+		}
+	}
+}
+.packs .splide__track.splide__track--slide.splide__track--ltr.splide__track--draggable {
+	@media screen and (max-width: 1600px) {
+		width: 100% !important;
+	}
+	@media screen and (min-width: 620px) {
+		overflow: initial;
+	}
+}

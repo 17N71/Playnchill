@@ -1,0 +1,47 @@
+// todo: responsive
+.promotionsAndDiscounts {
+	@apply mt-20;
+	&Title {
+		@apply text-[32px] font-semibold 2xl:text-left text-center;
+	}
+	&Cards {
+		@apply mt-5 flex flex-wrap gap-[18.7px] justify-center;
+	}
+	&Card {
+		@apply w-full;
+		img {
+			@apply rounded-2xl w-full;
+		}
+	}
+	&Prices {
+		@apply ml-7 mt-8;
+		@apply flex w-full gap-5 items-center;
+		& > span:nth-child(1) {
+			@apply text-white text-2xl font-medium;
+		}
+		& > span:nth-child(2) {
+			@apply bg-venom text-white text-lg text-center flex items-center justify-center rounded-lg py-2 px-2.5;
+		}
+		& > span:nth-child(3) {
+			@apply text-white/[20%] text-lg relative font-normal;
+		}
+	}
+	&Name {
+		@apply ml-7 mt-5;
+	}
+	&Accounts {
+		@apply ml-9 mt-5 flex items-center gap-10  text-[#747474] text-sm;
+		span {
+			@apply relative;
+			&:nth-of-type(2) {
+				@apply after:bg-sky;
+			}
+			&:nth-of-type(1) {
+				@apply after:bg-orange;
+			}
+			& {
+				@apply after:w-3 after:opacity-50 after:rounded-full after:h-3 after:absolute after:-left-4 after:top-1/2 after:transform after:-translate-y-1/2 hover:after:opacity-100 after:transition-opacity after:duration-200;
+			}
+		}
+	}
+}

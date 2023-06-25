@@ -1,0 +1,16 @@
+.tabHeaderList {
+	@apply flex gap-7 items-center font-medium text-xl;
+}
+.tabHeaderItem {
+	@apply text-[#868686] transition-colors duration-300;
+	&.tabActive {
+		@apply text-white  relative;
+		.line {
+			@apply bg-white w-full h-[2px] left-0 absolute -bottom-5;
+		}
+	}
+}
+
+.hr {
+	@apply border-borderColor border-[1px] mt-5;
+}

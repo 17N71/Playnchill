@@ -2,8 +2,9 @@ import type { IGameCardInner } from "@/modules/IGameCard"
 import Image from "next/image"
 import Link from "next/link"
 import { AiOutlineHeart } from "react-icons/ai"
-import Button from "../Button"
-import styles from "../GameCard/gameCard.module.scss"
+import styles from "../ui/GameCard/gameCard.module.scss"
+import Button from "../ui/Button"
+import CardFooter from "../CardFooter"
 const GameCardMediaBig = ({
 	toggleFav,
 	toggleBas,
@@ -69,20 +70,7 @@ const GameCardMediaBig = ({
 					В корзину
 				</Button>
 			</Link>
-			<div className={styles.cardFooter}>
-				<div className={styles.cardFooterPrices}>
-					<span>{(gamePrice - (gamePrice / 100) * saleForGame).toFixed()}</span>
-					{` `}
-					<span>{saleForGame}%</span>
-					{` `}
-					<span>{gamePrice}</span>
-				</div>
-				<h3>{nameGame}</h3>
-				<div className={styles.dots}>
-					<span>Буст</span>
-					<span>Origin</span>
-				</div>
-			</div>
+			<CardFooter nameGame={nameGame} saleForGame={saleForGame} gamePrice={gamePrice} />
 		</div>
 	)
 }

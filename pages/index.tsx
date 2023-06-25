@@ -1,43 +1,9 @@
-import { client } from "@/ApolloClient"
-import HomeSliderComponent from "@/components/HomeComponents/HomeSliderComponent"
-import Top4 from "@/components/HomeComponents/Top4"
-import { ITop4 } from "@/modules/getTop4"
+import { client } from "@/components/Layouts/ApolloClient"
+import Home from "@/components/Screens/Home"
 import { IHomeProps } from "@/modules/IHome"
-import { getTop4 } from "@/services/queries"
-import styles from "@/styles/home.module.scss"
-import type { GetStaticProps } from "next"
-import { createContext } from "react"
-export const HomeDataContext = createContext({})
-const Home = ({ top4Data }: IHomeProps) => {
-	return (
-		<div className={styles.home}>
-			<HomeSliderComponent />
-			<div className={"layout"}>
-				<HomeDataContext.Provider value={{ top4Data }}>
-					<Top4 />
-				</HomeDataContext.Provider>
-			</div>
-		</div>
-	)
+import { getHomeStaticProps } from "@/services/getHome.service"
+export const getStaticProps = getHomeStaticProps(client)
+const HomePage = ({ top4Data, last12Games }: IHomeProps) => {
+	return <Home top4Data={top4Data} last12Games={last12Games} />
 }
-
-export default Home
-
-export const getStaticProps: GetStaticProps = async () => {
-	try {
-		const { data: top4Data, error } = await client.query<ITop4>({ query: getTop4 })
-		if (error) {
-			console.log(error)
-		}
-		return {
-			props: {
-				top4Data,
-			},
-		}
-	} catch (error) {
-		console.error(error)
-		return {
-			notFound: true,
-		}
-	}
-}
+export default HomePage

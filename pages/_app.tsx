@@ -1,10 +1,10 @@
-import "@splidejs/react-splide/css"
+import ApolloConnecter from "@/components/Layouts/ApolloClient"
+import Header from "@/components/Layouts/HeaderComponents/Header"
 import "@/styles/globals.scss"
-import type { AppProps } from "next/app"
 import { Inter, Manrope, Montserrat } from "@next/font/google"
-import Header from "../components/HeaderComponents/Header/index"
+import "@splidejs/react-splide/css"
+import type { AppProps } from "next/app"
 import Head from "next/head"
-import ApolloConnecter from "@/ApolloClient"
 const inter = Inter({
 	weight: "400",
 	subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],

@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Button from "@/components/Button"
+import Button from "@/components/ui/Button"
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide"
 import { GoChevronRight } from "react-icons/go"
 import styles from "./homeSlide.module.scss"

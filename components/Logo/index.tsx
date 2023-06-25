@@ -2,7 +2,7 @@ import { HeaderContextProps } from "@/modules/headerContext"
 import Image from "next/image"
 import Link from "next/link"
 import { useContext } from "react"
-import { HeaderContext } from "../HeaderComponents/Header"
+import { HeaderContext } from "../Layouts/HeaderComponents/Header"
 import styles from "./logo.module.scss"
 const Logo = ({ withText = false, className = "" }: { withText?: boolean; className?: string }) => {
 	const { closeMenuHandle } = useContext(HeaderContext) as HeaderContextProps

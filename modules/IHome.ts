@@ -1,5 +1,6 @@
-import { ITop4 } from "./getTop4"
+import { IGetGameCard } from "./getTop4"
 
 export interface IHomeProps {
-	top4Data: ITop4
+	top4Data: IGetGameCard
+	last12Games: IGetGameCard
 }

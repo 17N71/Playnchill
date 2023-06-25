@@ -16,11 +16,7 @@ export const useFavoriteStore = create<IFavoritesStore>()(
 					return get().addToFavorites(id)
 				}
 			},
-			isHas: (id: string) => {
-				return get().favorites.includes(id)
-			},
 		}),
-
 		{
 			name: "favorites",
 		}

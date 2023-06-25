@@ -1,0 +1,68 @@
+.packs {
+	@apply my-44 max-[1600px]:overflow-hidden vsm:h-[400px] h-[600px] flex justify-center w-full px-10 py-5;
+	&Pack {
+		@apply mx-auto max-[620px]:h-full bg-gradient-to-br rounded-2xl p-10 gap-0 max-w-[650px] w-full h-full;
+		> div {
+			@apply flex flex-col justify-between;
+		}
+		&Name {
+			@apply vsm:text-3xl text-2xl vsm:pr-24 font-extrabold;
+		}
+		&.minecraftOrange {
+			@apply from-minecraftRoseOrange to-minecraftOrange;
+		}
+		&.minecraftLime {
+			@apply from-minecraftGreen to-minecraftLime relative;
+		}
+		.packsPackImage {
+			@apply absolute hidden vsm:block;
+			&.left {
+				@apply max-w-[262px] h-[344px] w-full object-cover right-0 -top-8;
+			}
+			&.right {
+				@apply max-w-[435px] h-[465px] w-full object-cover big:-right-40	-right-10 big:-top-[38%] -top-[24%];
+			}
+		}
+
+		&Prices {
+			@apply flex gap-5 mt-5 max-[480px]:flex-col;
+			span:nth-of-type(1) {
+				@apply text-2xl font-extrabold;
+			}
+			span:nth-of-type(2) {
+				@apply font-extrabold text-xl text-customYellow;
+			}
+			span:nth-of-type(3) {
+				@apply text-lg font-semibold text-white/50;
+			}
+		}
+		&Content {
+			@apply flex justify-between h-full z-50;
+		}
+	}
+	&StoreButtons {
+		@apply flex vsm:flex-row flex-col w-full gap-2.5 vsm:mt-16 mt-2;
+		button {
+			@apply text-lg font-extrabold px-10 py-4  w-full;
+			&.inBask {
+				@apply bg-black/20;
+			}
+			&.inFav {
+				@apply bg-red-100/80 text-black;
+			}
+		}
+	}
+	.minecraftLime {
+		@apply flex w-full  justify-start items-start;
+	}
+	.minecraftOrange {
+		@apply flex w-full  justify-start items-start;
+	}
+}
+.baskHas {
+	background-color: white !important;
+	color: black !important;
+}
+.favHas {
+	color: #366edc !important;
+}

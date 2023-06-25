@@ -1,9 +1,9 @@
 import type { IGameCardInner } from "@/modules/IGameCard"
-import styles from "./smallGameCard.module.scss"
 import Image from "next/image"
-import { SlBasket } from "react-icons/sl"
-import { FiHeart } from "react-icons/fi"
 import Link from "next/link"
+import { FiHeart } from "react-icons/fi"
+import { SlBasket } from "react-icons/sl"
+import styles from "./smallGameCard.module.scss"
 const GameCardMediaSmall = ({
 	toggleFav,
 	toggleBas,

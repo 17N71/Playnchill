@@ -22,6 +22,6 @@ export interface AllGameCard {
 	gameImage: GameImage
 }
 
-export interface ITop4 {
+export interface IGetGameCard {
 	allGameCard: AllGameCard[]
 }

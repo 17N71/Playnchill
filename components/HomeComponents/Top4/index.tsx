@@ -1,9 +1,9 @@
 import styles from "./top4.module.scss"
 import Image from "next/image"
 import { useContext } from "react"
-import { HomeDataContext } from "@/pages"
 import { IHomeProps } from "@/modules/IHome"
-import GameCard from "@/components/GameCard"
+import GameCard from "@/components/ui/GameCard"
+import { HomeDataContext } from "@/components/Screens/Home"
 const Top4 = () => {
 	const {
 		top4Data: { allGameCard },
@@ -21,7 +21,7 @@ const Top4 = () => {
 				/>
 			</h2>
 			<div className={styles.cards}>
-				{allGameCard.length &&
+				{allGameCard.length > 0 &&
 					allGameCard.map((game) => <GameCard isTop={true} key={game._id} game={game} />)}
 			</div>
 		</section>
